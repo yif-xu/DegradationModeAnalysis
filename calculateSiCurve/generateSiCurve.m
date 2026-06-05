@@ -44,12 +44,12 @@ function siliconStruct = generateSiCurve(varargin)
 set(groot,'defaultAxesTickLabelInterpreter','latex')   % LaTeX ticks axis-wide
 
 % ---- Defaults -----------------------------------------------------------
-BlendPath         = "";              
-SavePath          = "";              
-GraphitePath      = "";              
-GraphiteSource    = "Kuecher";       
-LithDirection     = "lithiation";    
-GammaSi           = NaN;             
+BlendPath         = "InputData/MySiGr/delith.mat";              
+SavePath          = "MySilicon/mysilicon.mat";              
+GraphitePath      = "InputData/Graphite/Gr_Delithiation_Hossain.mat";              
+GraphiteSource    = "Hossain";       
+LithDirection     = "delithiation";    
+GammaSi           = 0.45;             
 filterInputData   = true;            
 smoothBadQS       = true;            
 smoothWindow      = 71;              
