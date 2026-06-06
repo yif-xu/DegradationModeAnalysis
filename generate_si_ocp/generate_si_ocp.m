@@ -53,14 +53,14 @@ function siliconStruct = generate_si_ocp(varargin)
 set(groot,'defaultAxesTickLabelInterpreter','latex')   % LaTeX ticks axis-wide
 
 % ---- Defaults -----------------------------------------------------------
-blendPath         = "";
-savePath          = "";
-graphitePath      = "";
+blendPath         = "input_data/silicon-graphite/P45B_Anode_lithiation_0C03.mat";
+savePath          = "MySilicon/p45b_lith_ocp.mat";
+graphitePath      = "input_data/graphite/Gr_lithiation_Rehm2026.mat";
 graphiteSource    = "Rehm2026";
 lithDirection     = "lithiation";
-gammaSi           = NaN;
-filterBlend       = false;
-filterGraphite    = false;
+gammaSi           = 0.245;
+filterBlend       = true;
+filterGraphite    = true;
 pavOutput         = true;
 plotFlag          = true;
 
